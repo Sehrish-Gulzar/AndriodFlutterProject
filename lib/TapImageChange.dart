@@ -27,15 +27,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Color newColor = Colors.black;
-  List<Color> myColor = [
-    Colors.yellow,
-    Colors.purple,
-    Colors.blue,
-    Colors.black,
-    Colors.red,
-    Colors.blueGrey,
-  ];
+  Color newColor1 = Colors.black;
+  Color newColor2 = Colors.black;
+  Color newColor3 = Colors.black;
+  Color newColor4 = Colors.black;
+  Color newColor5 = Colors.black;
+  Color newColor6 = Colors.black;
+  // List<Color> myColor = [
+  //   Colors.yellow,
+  //   Colors.purple,
+  //   Colors.blue,
+  //   Colors.black,
+  //   Colors.red,
+  //   Colors.blueGrey,
+  // ];
   List<Widget> MyContainer = [
     Container(
       margin: EdgeInsets.all(20),
@@ -188,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 text: TextSpan(
                                   text: ('Yellow Ferrari \t \t'),
                                   style: TextStyle(
-                                      color: newColor,
+                                      color: newColor1,
                                       fontSize: 30,
                                       height: 2,
                                       backgroundColor: Colors.grey,
@@ -197,7 +202,13 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ..onTap = () {
                                       setState(() {
                                         AddContainer[0] = MyContainer[0];
-                                        newColor = myColor[0];
+                                        // newColor = myColor[0];
+                                        newColor1 = Colors.yellow;
+                                        newColor2 = Colors.black;
+                                        newColor3 = Colors.black;
+                                        newColor4 = Colors.black;
+                                        newColor5 = Colors.black;
+                                        newColor6 = Colors.black;
                                       });
                                     },
                                   children: [
@@ -206,12 +217,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ..onTap = () {
                                           setState(() {
                                             AddContainer[0] = MyContainer[1];
-                                            newColor = myColor[1];
+                                            // newColor = myColor[1];
+                                            newColor1 = Colors.black;
+                                            newColor2 = Colors.purple;
+                                            newColor3 = Colors.black;
+                                            newColor4 = Colors.black;
+                                            newColor5 = Colors.black;
+                                            newColor6 = Colors.black;
                                           });
                                         },
                                       text: ('Purple Ferrari \t \t'),
                                       style: TextStyle(
-                                          color: newColor,
+                                          color: newColor2,
                                           fontSize: 30,
                                           backgroundColor: Colors.black26,
                                           fontWeight: FontWeight.bold),
@@ -221,12 +238,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ..onTap = () {
                                           setState(() {
                                             AddContainer[0] = MyContainer[2];
-                                            newColor = myColor[2];
+                                            // newColor = myColor[2];
+                                            newColor1 = Colors.black;
+                                            newColor2 = Colors.black;
+                                            newColor3 = Colors.blue;
+                                            newColor4 = Colors.black;
+                                            newColor5 = Colors.black;
+                                            newColor6 = Colors.black;
                                           });
                                         },
                                       text: ('Blue Ferrari \t \t \n'),
                                       style: TextStyle(
-                                          color: newColor,
+                                          color: newColor3,
                                           fontSize: 30,
                                           backgroundColor: Colors.grey,
                                           fontWeight: FontWeight.bold),
@@ -236,12 +259,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ..onTap = () {
                                           setState(() {
                                             AddContainer[0] = MyContainer[3];
-                                            newColor = myColor[3];
+                                            // newColor = myColor[3];
+                                            newColor1 = Colors.black;
+                                            newColor2 = Colors.black;
+                                            newColor3 = Colors.black;
+                                            newColor4 = Colors.grey;
+                                            newColor5 = Colors.black;
+                                            newColor6 = Colors.black;
                                           });
                                         },
                                       text: ('Black Ferrari \t \t '),
                                       style: TextStyle(
-                                          color: newColor,
+                                          color: newColor4,
                                           fontSize: 30,
                                           backgroundColor: Colors.black26,
                                           fontWeight: FontWeight.bold),
@@ -251,12 +280,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ..onTap = () {
                                           setState(() {
                                             AddContainer[0] = MyContainer[4];
-                                            newColor = myColor[4];
+                                            // newColor = myColor[4];
+                                            newColor1 = Colors.black;
+                                            newColor2 = Colors.black;
+                                            newColor3 = Colors.black;
+                                            newColor4 = Colors.black;
+                                            newColor5 = Colors.red;
+                                            newColor6 = Colors.black;
                                           });
                                         },
                                       text: (' Red Ferrari  \t \t'),
                                       style: TextStyle(
-                                          color: newColor,
+                                          color: newColor5,
                                           fontSize: 30,
                                           backgroundColor: Colors.grey,
                                           fontWeight: FontWeight.bold),
@@ -266,12 +301,18 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ..onTap = () {
                                           setState(() {
                                             AddContainer[0] = MyContainer[5];
-                                            newColor = myColor[5];
+                                            // newColor = myColor[5];
+                                            newColor1 = Colors.black;
+                                            newColor2 = Colors.black;
+                                            newColor3 = Colors.black;
+                                            newColor4 = Colors.black;
+                                            newColor5 = Colors.black;
+                                            newColor6 = Colors.white;
                                           });
                                         },
                                       text: ('   White Ferrari'),
                                       style: TextStyle(
-                                          color: newColor,
+                                          color: newColor6,
                                           backgroundColor: Colors.black26,
                                           fontSize: 30,
                                           fontWeight: FontWeight.bold),
