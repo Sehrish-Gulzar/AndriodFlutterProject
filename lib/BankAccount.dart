@@ -159,7 +159,7 @@ class _MyBankState extends State<MyBank> {
                           balance = (balance - withdraw);
                         } else {
                           msg =
-                              "Insufficient Balance Please Recharge Your Account!";
+                              "                         Insufficient Balance!\nYour Balance is less than withdraw ammount";
                         }
                       });
                     },
@@ -208,6 +208,8 @@ class _MyBankState extends State<MyBank> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
+                      width: 150,
+                      height: 50,
                       margin: EdgeInsets.all(10),
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -217,9 +219,11 @@ class _MyBankState extends State<MyBank> {
                             side: BorderSide(color: Colors.blueGrey, width: 5),
                           ),
                           onPressed: ShowBalance,
-                          child: Text(" Show Balance ")),
+                          child: Center(child: Text(" Show Balance "))),
                     ),
                     Container(
+                      width: 100,
+                      height: 50,
                       margin: EdgeInsets.all(10),
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -229,9 +233,11 @@ class _MyBankState extends State<MyBank> {
                             side: BorderSide(color: Colors.blueGrey, width: 5),
                           ),
                           onPressed: Deposit,
-                          child: Text(" Deposit ")),
+                          child: Center(child: Text(" Deposit "))),
                     ),
                     Container(
+                      width: 100,
+                      height: 50,
                       margin: EdgeInsets.all(10),
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -241,7 +247,7 @@ class _MyBankState extends State<MyBank> {
                             side: BorderSide(color: Colors.blueGrey, width: 5),
                           ),
                           onPressed: Withdraw,
-                          child: Text(" Withdraw ")),
+                          child: Center(child: Text("Withdraw "))),
                     ),
                   ],
                 ),
@@ -254,7 +260,7 @@ class _MyBankState extends State<MyBank> {
                       text: ("$msg"),
                       style: TextStyle(
                           color: Colors.red,
-                          fontSize: 20,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -263,6 +269,14 @@ class _MyBankState extends State<MyBank> {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.black,
+            onPressed: () {
+              setState(() {
+                balance = 0;
+              });
+            },
+            child: Text("Reset")),
       ),
     );
   }
