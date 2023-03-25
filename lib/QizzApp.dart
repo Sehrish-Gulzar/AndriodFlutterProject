@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -84,8 +82,8 @@ class _QuizAppState extends State<QuizApp> {
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               shadowColor: Colors.blue,
+              backgroundColor: Colors.black,
               elevation: 10,
-              primary: Colors.black,
               side: BorderSide(color: Colors.blueGrey, width: 5),
             ),
             onPressed: () {
